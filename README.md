@@ -1,9 +1,6 @@
 # strike
 On-refresh tallying of color coded Google Docs bulleted lists.
 
-![example usage](https://github.com/friendtotheend/strike/edit/main/sample2.png)
-
-
 ### This thing has certain quirks. Here is a list of things I know about: ###
 
 - Apps Script is not returning strikethrough values for text that is stricken via checkbox, meaning only manual/alt+shift+5 strikethroughs work for now. Using the checkboxes would mess up the tally.
