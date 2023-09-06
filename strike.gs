@@ -41,7 +41,22 @@ DocumentApp.getActiveDocument().getBody().getTables().forEach(table => {Document
 
 //getting rid of the extra space added each time the grand total table is constructed
 let body = DocumentApp.getActiveDocument().getBody()
-body.editAsText().deleteText(body.getText().length-1,body.getText().length-1)
+
+//code I found to remove the extra empty paragraph caused by appending table.
+
+var paragraphs = DocumentApp.getActiveDocument().getBody().getParagraphs();
+for (var i=paragraphs.length-1; i>=0; i--){
+      var line = paragraphs[i];   
+      if (line.getText().trim() ) {
+        break;
+      }
+      else {
+        line.clear();
+        try {line.merge()}
+        catch {}        
+      }
+    }
+
 
 ////constructing the grand total table/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
