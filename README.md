@@ -1,7 +1,7 @@
 # strike
 On-refresh tallying of color coded Google Docs bulleted lists.
 
-![example usage](https://github.com/friendtotheend/strike/edit/main/sample.png)
+![example usage](https://github.com/friendtotheend/strike/edit/main/sample2.png)
 
 
 ### This thing has certain quirks. Here is a list of things I know about: ###
